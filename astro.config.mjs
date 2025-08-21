@@ -3,7 +3,6 @@ import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://aditya-aswani.github.io',
-  base: '/caliro-website',
+  site: 'https://caliro.org',
   output: 'static'
 });
