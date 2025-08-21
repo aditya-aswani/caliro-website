@@ -1,0 +1,109 @@
+---
+---
+
+<section class="problem" id="problem">
+  <div class="container">
+    <h2 class="section-title">The Problem We're Solving</h2>
+    <p class="section-subtitle">
+      Modern smartphones are engineered to maximize engagement, not wellbeing
+    </p>
+    
+    <div class="problem-grid">
+      <div class="problem-card">
+        <div class="problem-icon">📱</div>
+        <h3>Designed for Addiction</h3>
+        <p>Apps use dark patterns and psychological tricks to keep you scrolling, clicking, and coming back for more.</p>
+      </div>
+      
+      <div class="problem-card">
+        <div class="problem-icon">🎰</div>
+        <h3>Constant Stimulation</h3>
+        <p>Notifications, infinite feeds, and variable rewards hijack your attention and fragment your focus.</p>
+      </div>
+      
+      <div class="problem-card">
+        <div class="problem-icon">⏰</div>
+        <h3>Lost Time & Presence</h3>
+        <p>Hours disappear into digital vortexes, pulling you away from real connections and meaningful activities.</p>
+      </div>
+    </div>
+    
+    <div class="problem-statement">
+      <p>
+        Whether it's social media, adult content, gambling apps, or just endless browsing - 
+        the struggle is real. Current solutions are band-aids on a system designed to exploit 
+        your attention. <strong>It's time for something built differently from the ground up.</strong>
+      </p>
+    </div>
+  </div>
+</section>
+
+<style>
+  .problem {
+    padding: 100px 0;
+    background: white;
+  }
+
+  .section-title {
+    font-size: clamp(2rem, 5vw, 3rem);
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: 800;
+  }
+
+  .section-subtitle {
+    text-align: center;
+    color: var(--color-gray);
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 3rem;
+  }
+
+  .problem-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .problem-card {
+    background: var(--color-light);
+    padding: 2rem;
+    border-radius: 16px;
+    text-align: center;
+    transition: transform 0.3s;
+  }
+
+  .problem-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .problem-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .problem-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: var(--color-dark);
+  }
+
+  .problem-card p {
+    color: var(--color-gray);
+    line-height: 1.8;
+  }
+
+  .problem-statement {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--color-gray);
+    line-height: 1.8;
+  }
+
+  .problem-statement strong {
+    color: var(--color-dark);
+  }
+</style>

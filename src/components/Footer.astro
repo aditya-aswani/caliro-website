@@ -1,0 +1,97 @@
+---
+---
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <h3>Caliro</h3>
+        <p>Android OS for Mindful Living</p>
+      </div>
+      
+      <div class="footer-links">
+        <a href="https://github.com/yourusername/caliro">GitHub</a>
+        <a href="https://caliro.substack.com">Newsletter</a>
+        <a href="mailto:hello@caliro.org">Contact</a>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2025 Caliro Project. Open Source (GPL-3.0)</p>
+      <p>Powered by <a href="https://astro.build/">Astro</a></p>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    background: var(--color-dark);
+    color: white;
+    padding: 60px 0 30px;
+    margin-top: 100px;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 30px;
+  }
+
+  .footer-brand h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .footer-brand p {
+    opacity: 0.7;
+  }
+
+  .footer-links {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .footer-links a {
+    color: white;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+  }
+
+  .footer-links a:hover {
+    opacity: 1;
+  }
+
+  .footer-bottom {
+    text-align: center;
+    opacity: 0.5;
+    font-size: 0.9rem;
+  }
+
+  .footer-bottom a {
+    color: var(--color-primary);
+    opacity: 0.8;
+    transition: opacity 0.3s;
+    text-decoration: none;
+  }
+
+  .footer-bottom a:hover {
+    opacity: 1;
+    text-decoration: underline;
+  }
+
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      text-align: center;
+      gap: 2rem;
+    }
+    
+    .footer-links {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
+</style>

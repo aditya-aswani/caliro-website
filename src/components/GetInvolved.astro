@@ -1,0 +1,101 @@
+---
+---
+
+<section class="get-involved" id="get-involved">
+  <div class="container">
+    <h2 class="section-title">Get Involved</h2>
+    <p class="section-subtitle">
+      Caliro is a community project. Here's how you can contribute, even before we write our first line of code:
+    </p>
+    
+    <div class="involvement-grid">
+      <a href="https://github.com/yourusername/caliro" class="involvement-card">
+        <div class="involvement-icon">💻</div>
+        <h3>GitHub</h3>
+        <p>Star the repo, watch for updates, and contribute when development begins</p>
+      </a>
+      
+      <div class="involvement-card">
+        <div class="involvement-icon">🧪</div>
+        <h3>Testing</h3>
+        <p>Be an early tester when we have our first builds ready</p>
+      </div>
+      
+      <div class="involvement-card">
+        <div class="involvement-icon">📝</div>
+        <h3>Feedback</h3>
+        <p>Share your struggles and what features would help you most</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .get-involved {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+  }
+
+  .section-title {
+    font-size: clamp(2rem, 5vw, 3rem);
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: 800;
+  }
+
+  .section-subtitle {
+    text-align: center;
+    color: var(--color-gray);
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 3rem;
+  }
+
+  .involvement-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 768px) {
+    .involvement-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .involvement-card {
+    background: var(--color-light);
+    padding: 2rem;
+    border-radius: 16px;
+    text-align: center;
+    transition: all 0.3s;
+    cursor: pointer;
+    display: block;
+    color: inherit;
+  }
+
+  .involvement-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    background: white;
+  }
+
+  .involvement-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .involvement-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-dark);
+  }
+
+  .involvement-card p {
+    color: var(--color-gray);
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+</style>
